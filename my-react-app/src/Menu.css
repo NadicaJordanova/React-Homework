@@ -1,0 +1,50 @@
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #3d81f7aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.menu {
+  margin: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu h1 {
+  font-size: 64px;
+  text-shadow: 3px 3px 7px #7ba2ff;
+}
+.menu h1:hover {
+  transition: ease-in 0.3s;
+  text-shadow: 4px 4px 10px #7ba2ff;
+  cursor: default;
+}
+.menu .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  gap: 20px;
+}
+.menu .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 400px;
+  text-align: justify;
+
+  border-radius: 10px;
+  padding: 15px;
+}
+.menu img {
+  padding: 0;
+  margin: 20px;
+}

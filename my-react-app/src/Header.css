@@ -1,0 +1,19 @@
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+}
+.header img{
+ height: 50px;
+}
+
+.login{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+
