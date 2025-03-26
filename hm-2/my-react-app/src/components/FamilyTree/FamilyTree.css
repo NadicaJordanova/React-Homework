@@ -1,0 +1,27 @@
+.parent{
+    background-color: lightgreen;
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: lightpink;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.grandchild{
+    background-color: lightseagreen;
+    border-radius: 7px;
+    
+    
+}

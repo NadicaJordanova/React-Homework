@@ -1,0 +1,16 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 10px solid palevioletred;
+    border-radius: 20px;
+    background-color: lightpink;  
+    border-style: double;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+}
