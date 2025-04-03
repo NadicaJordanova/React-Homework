@@ -1,6 +1,6 @@
 
 
-function Login({ isLoggedin, logedin }) {
+function Login({ isLoggedin }) {
   return (
     <div>
       <h1>Login page</h1>

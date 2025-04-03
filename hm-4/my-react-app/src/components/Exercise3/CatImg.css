@@ -1,0 +1,11 @@
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.cats{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 20px;
+}

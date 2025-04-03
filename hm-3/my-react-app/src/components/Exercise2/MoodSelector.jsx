@@ -13,6 +13,7 @@ function MoodSelector(){
     const changeMood = (newMood) => {
         setMood(newMood)
     }
+    
  return(
     <div>
       {Object.values(moodEmojiMap).map((mood, index) => (
