@@ -3,7 +3,7 @@ import "../Exercise2/RandomUserFetcher.css"
 
 function RandomUserFetcher() {
   const [userId, setUserId] = useState(null);
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({});
 
   function getRandomInt() {
     return Math.floor(Math.random() * 10 + 1);
@@ -14,7 +14,6 @@ function RandomUserFetcher() {
 
   console.log(userId);
   useEffect(() => {
-    if (userId === null) return;
     fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
       .then((response) => response.json())
       .then((data) => setUser(data))
@@ -30,10 +29,10 @@ function RandomUserFetcher() {
 
       {user ? (
         <div>
-          <h1>{user.name}</h1>
-          <h3>{user.address.city}</h3>
-          <p>{user.phone}</p>
-          <p>{user.company.name}</p>
+          <h1>{user?.name}</h1>
+          <h3>{user?.address?.city}</h3>
+          <p>{user?.phone}</p>
+          <p>{user?.company?.name}</p>
         </div>
       ) : (
         ""

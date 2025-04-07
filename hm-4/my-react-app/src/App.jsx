@@ -13,9 +13,10 @@ function fetchImgs(){
   fetch("https://api.thecatapi.com/v1/images/search?limit=10")
   .then((response) => response.json())
   .then((data) => setImg(data))
+  // catch
 }
 useEffect(() => {
-if(imgs === null) return;
+// if(imgs === null) return;
  fetchImgs()
 }, [])
 

@@ -4,7 +4,8 @@ function CatImg({imgs}){
         <div className="cats">
             {console.log(imgs)}
      {console.log(imgs)}
-      {imgs.map((img, index) => (
+
+      {imgs?.map((img, index) => (
         <div key={index}>
             <img src={img.url} alt="Picture of a cat" />
         </div>
