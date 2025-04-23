@@ -42,20 +42,21 @@ function ToDoList() {
       </form>
 
       <div>
-        {tasks.map((task, index) => (
-          <div>
-            {task.text.text === "" ?  'Deleted' : (
-              <div key={index}>
-                <span> {task.text.text}</span>
-                <span>{task.isCompletedText} </span>
-                <button onClick={() => setDone(index, !task.isCompleted)}>
-                  Done
-                </button>
-                <button onClick={() => deleteTask(index)}>Delete</button>
-              </div>
-            )}
-          </div>
-        ))}
+  {tasks
+   
+    .map((task, index) => (
+        
+      <div key={index}>
+        {console.log(tasks)}
+        <span>{task.text.text}</span>
+        <span>{task.isCompletedText}</span>
+        <button onClick={() => setDone(index, !task.isCompleted)}>Done</button>
+        <button onClick={() => deleteTask(index)}>Delete</button>
+      </div>
+    ))}
+</div>
+
+      
         {/* <button
       onClick={() => {
         setEditInput(task.text.text);
@@ -74,8 +75,7 @@ function ToDoList() {
     </form> */}
       </div>
 
-      {console.log(tasks)}
-    </div>
+     
   );
 }
 

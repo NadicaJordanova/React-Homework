@@ -26,23 +26,11 @@ function ToDoProvider({ children }) {
     }
   }
 
-  function deleteTask(taskIndex){
-    try {
-        setTasks(prevTasks => {
-            const updatedTasks = [...prevTasks];
-            const updatedTask = {
-                ...updatedTasks[taskIndex],
-                text: "",
-                isCompleted: "",
-                isCompletedText: ""
-              };
-              updatedTasks[taskIndex] = updatedTask;
-              return updatedTasks;
-          });
-      } catch (err) {
-          console.log(err.message);
-      }
-  }
+
+        function deleteTask(index) {
+            setTasks(prevTasks => prevTasks.filter((_, i) => i !== index));
+          }
+    
   
   
   function setDone(taskIndex, newState) {
