@@ -19,7 +19,7 @@ function ToDoProvider({ children }) {
         isCompletedText: ""
       });
 
-      // Add the new task to the array
+    
       setTasks((prevTasks) => [...prevTasks, task]);
     } catch (err) {
       console.log(err.message);

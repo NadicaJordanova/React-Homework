@@ -45,7 +45,6 @@ function ToDoList() {
   {tasks
    
     .map((task, index) => (
-        
       <div key={index}>
         {console.log(tasks)}
         <span>{task.text.text}</span>
