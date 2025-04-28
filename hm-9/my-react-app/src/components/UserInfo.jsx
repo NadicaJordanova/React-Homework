@@ -23,6 +23,10 @@ function UserInfo({ username, password, email, country }) {
     }
   }
 
+   function clear(){
+    localStorage.clear()
+   }
+
   console.log(localStorage.getItem("username"), "getItem");
   return (
     <div>
@@ -34,7 +38,9 @@ function UserInfo({ username, password, email, country }) {
         <h2>Name:{localStorage.getItem("username")}</h2>
         <h2>Email: {localStorage.getItem("email")}</h2>
         <h2>Country: {localStorage.getItem("country")}</h2>
+        <button onClick={clear} type="submit">Clear Form</button>
       </form>
+  
     </div>
   );
 }
