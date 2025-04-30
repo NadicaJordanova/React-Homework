@@ -17,14 +17,19 @@ function Guesser() {
   console.log(toLow, "toLow");
   const [guessedNumber, setGuessedNumber] = useState(null);
 
+  function guessNumber(){
+    dispatch(submit(guessedNumber))
+    setGuessedNumber("")
+  }
+
   return (
     <div>
       <button onClick={() => dispatch(startNewGame())}>Start New Game</button>
       <br />
       <br />
       <div>
-      <input type="number" onChange={(e) => setGuessedNumber(e.target.value)} />
-      <button onClick={() => dispatch(submit(guessedNumber))}>Guess</button>
+      <input type="number" onChange={(e) => setGuessedNumber(e.target.value)} value={guessedNumber}/>
+      <button onClick={guessNumber}>Guess</button>
 
       </div>
     
