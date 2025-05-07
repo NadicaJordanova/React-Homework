@@ -7,6 +7,7 @@ import {Route, Routes} from "react-router-dom"
 import Charachters from './components/Charachters'
 import Home from './components/Home/Home'
 import Favorites from './components/Favorites/Favorites'
+import Charachter from './components/pages/Charachter/CharachterDetail'
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
       <Route path='/' element={<Home />}/>
       <Route path="/charachters" element={<Charachters />}/>
       <Route path="/favorites"  element={<Favorites />}/>
+      <Route path='/:id' element={<Charachter />}/>
+
     </Routes> 
   
    </>

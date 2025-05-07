@@ -1,7 +1,7 @@
 import { Link } from "react-router"
 
-const Navbar = () => {
-
+const Navbar = ({searchTerm, onSearchChange}) => {
+    
     return(
       <>
       <Link to="/">
@@ -14,7 +14,6 @@ const Navbar = () => {
       <h1>Favorites</h1>
       </Link>
 
-      <input type="text" />
      
       </>
     )
